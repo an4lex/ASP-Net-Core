@@ -7,4 +7,10 @@
     <RootNamespace>Project_1</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Configurations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
 </Project>

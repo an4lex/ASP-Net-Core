@@ -24,3 +24,5 @@
 /Users/andrianovalexander/Documents/University/NetCore/Project-1/obj/Debug/net6.0/Project-1.pdb
 /Users/andrianovalexander/Documents/University/NetCore/Project-1/obj/Debug/net6.0/Project-1.genruntimeconfig.cache
 /Users/andrianovalexander/Documents/University/NetCore/Project-1/obj/Debug/net6.0/ref/Project-1.dll
+/Users/andrianovalexander/Documents/University/NetCore/Project-1/bin/Debug/net6.0/Configurations/aboutGoogle.json
+/Users/andrianovalexander/Documents/University/NetCore/Project-1/bin/Debug/net6.0/Configurations/userInformation.json
