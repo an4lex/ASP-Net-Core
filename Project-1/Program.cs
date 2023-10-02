@@ -1,52 +1,39 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder();
 var app = builder.Build();
+builder.
+    Configuration.
+    AddXmlFile("Configurations/aboutApple.xml").
+    AddJsonFile("Configurations/aboutGoogle.json").
+    AddJsonFile("Configurations/userInformation.json").
+    AddInMemoryCollection(new Dictionary<string, string> {
+        {"password", "4000"},
+    });
 
-// Creating an instance of a Company class.
-var testCompany = new Company
-{
-    Name = "A-Company",
-    Location = "Mykolaiv",
-    Direction = "Mobile Development",
-    Employeers = 13
-};
+app.Map("/", (IConfiguration appConfig) => {
+    var companyName = "";
+    var employeesCount = 0;
+    IConfigurationSection company = appConfig.GetSection("Company");
+    foreach (var section in company.GetChildren()) {
+        var currentName = section.Key;
+        var currentEmployees = int.Parse(section.GetSection("employees").Value);
 
-// Printing an information about our instance.
-app.MapGet("/", () =>
-{
-    var companyInformation = "Name: " + testCompany.Name + "| Location: " +
-    testCompany.Location + "| Direction: " + testCompany.Direction
-    + "| Employeers: " + testCompany.Employeers;
-    return companyInformation;
-});
-
-// Getting the random value using Random().
-app.MapGet("/randSomeValue", () =>
-{
-    var random = new Random();
-    var randomValue = random.Next(0, 101);
-    var result = "My random value = " + randomValue;
-    return result;
-});
-
-// Using a middleware | Request (TOKEN).
-app.Use(async (context, next) => {
-    var token = context.Request.Query["token"];
-    if (token == "1000") {
-        await next();
+        if (currentEmployees > employeesCount) {
+            companyName = currentName;
+            employeesCount = currentEmployees;
+        }
     }
-    else {
-        context.Response.StatusCode = 401;
-        await context.Response.WriteAsync("Invalid token");
-    }
+    return $"Company: {companyName}. Employees count: {employeesCount}";
 });
 
-// Run our app.
+app.Map("/about", (IConfiguration appConfig) => {
+    IConfigurationSection user = appConfig.GetSection("User");
+    var firstName = user.GetSection("firstName").Value;
+    var lastName = user.GetSection("lastName").Value;
+    var age = user.GetSection("age").Value;
+    var city = user.GetSection("city").Value;
+
+    return $"First name: {firstName}. Last name: {lastName}. Age: {age}. " +
+    $"City: {city}";
+});
+
 app.Run();
-
-// Creating a Company class
-public class Company {
-    public string Name { get; set; }
-    public string Location { get; set; }
-    public string Direction { get; set; }
-    public int Employeers { get; set; }
-}
