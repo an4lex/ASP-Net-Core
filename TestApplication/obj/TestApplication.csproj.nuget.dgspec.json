@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andrianovalexander/Projects/TestApplication/TestApplication.csproj": {}
+    "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/TestApplication.csproj": {}
   },
   "projects": {
-    "/Users/andrianovalexander/Projects/TestApplication/TestApplication.csproj": {
+    "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/TestApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrianovalexander/Projects/TestApplication/TestApplication.csproj",
+        "projectUniqueName": "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/TestApplication.csproj",
         "projectName": "TestApplication",
-        "projectPath": "/Users/andrianovalexander/Projects/TestApplication/TestApplication.csproj",
+        "projectPath": "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/TestApplication.csproj",
         "packagesPath": "/Users/andrianovalexander/.nuget/packages/",
-        "outputPath": "/Users/andrianovalexander/Projects/TestApplication/obj/",
+        "outputPath": "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andrianovalexander/.nuget/NuGet/NuGet.Config"

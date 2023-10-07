@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ywwRkmh8Gq1FmGH8Z3Kb8ccDc8Ubj3Y7PDoKc+wuNhSl5VDgtplECLtU5kjYrPoh7RHVwpLX8B/sSs8eVSkpA==",
+  "dgSpecHash": "z0RPX1oHlgN0X2N1HYCcPQnLN+6mjpQfzRLxk74YE37UtwMj1ZGyeZbsyxushU8iTikxDTtiFt+WLVHdLiydow==",
   "success": true,
-  "projectFilePath": "/Users/andrianovalexander/Projects/TestApplication/TestApplication.csproj",
+  "projectFilePath": "/Users/andrianovalexander/Documents/University/NetCore/TestApplication/TestApplication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

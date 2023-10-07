@@ -26,3 +26,12 @@
 /Users/andrianovalexander/Projects/TestApplication/obj/Debug/net7.0/TestApplication.pdb
 /Users/andrianovalexander/Projects/TestApplication/obj/Debug/net7.0/TestApplication.genruntimeconfig.cache
 /Users/andrianovalexander/Projects/TestApplication/obj/Debug/net7.0/ref/TestApplication.dll
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.csproj.AssemblyReference.cache
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.AssemblyInfoInputs.cache
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.AssemblyInfo.cs
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.csproj.CoreCompileInputs.cache
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.MvcApplicationPartsAssemblyInfo.cache
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.dll
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/refint/TestApplication.dll
+/Users/andrianovalexander/Documents/University/NetCore/TestApplication/obj/Debug/net7.0/TestApplication.pdb

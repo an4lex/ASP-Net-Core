@@ -12,10 +12,12 @@
     <None Remove="Configurations\" />
     <None Remove="Interfaces\" />
     <None Remove="Services\" />
+    <None Remove="Other\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Configurations\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
+    <Folder Include="Other\" />
   </ItemGroup>
 </Project>
