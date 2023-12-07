@@ -1,4 +1,4 @@
-namespace ProjMVC.Models
+namespace FileDownload.Models
 {
     public class ErrorViewModel
     {
