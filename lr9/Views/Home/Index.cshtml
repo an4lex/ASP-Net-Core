@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Weather";
+
+}
+@model WeatherDataModel
+
+<form method="get">
+        <input type="text" name="city" placeholder="Enter your city">
+        <button type="submit">Get Weather</button>
+</form>
+@if (!string.IsNullOrEmpty(Context.Request.Query["city"]))
+{
+        <h2>Today in @Model.Name </h2>
+        <p><strong>Temperature: @Model.Main.Temp °C</strong></p>
+        <p>Humidity: @Model.Main.Humidity</p>
+}
