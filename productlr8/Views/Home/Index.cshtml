@@ -1,0 +1,78 @@
+﻿@{
+    Layout = null;
+    bool swap = (bool)ViewBag.Swap;
+}
+@using productlr8.Models
+@model List<Product>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+</style>
+
+<div>
+    <form method="post" action="@Url.Action("Swap")">
+        <button type="submit" name="swapButton">Change view</button>
+    </form>
+
+    <div>
+        @if(@swap)
+        {
+            <table>
+                <tr>
+                    <td colspan="4">
+                        Products
+                    </td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Created Date</td>
+                </tr>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                        <td>@product.Price</td>
+                        <td>@product.CreatedDate</td>
+                    </tr>
+                }
+            </table>
+        } else if(!@swap)
+        {
+            @foreach(var product in Model)
+            {
+                <ul>@product.Id @product.Name @product.Price @product.CreatedDate</ul>
+            }
+        }
+
+    </div>
+</div>
