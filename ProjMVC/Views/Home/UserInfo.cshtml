@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+@using MVCProject_.Models
+@model User
+
+<style>
+    div {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 18px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+</style>
+
+<div>
+    <div>
+    <h1>Hello!</h1>
+    <span><p>Your name: @Model.Name</p>
+    <p>Your age: @Model.Age</p></span>
+    </div>
+    <form asp-action="OrderData" method="post">
+        <label>How many you want to order</label>
+        <input name="amount" type="number" />
+        <button type="submit">Submit</button>
+    </form>
+</div>

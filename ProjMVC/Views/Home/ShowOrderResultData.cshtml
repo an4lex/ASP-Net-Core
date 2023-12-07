@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+@using MVCProject_.Models
+@model User
+
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    span {
+        margin-left: 10px;
+    }
+</style>
+
+<h1>Your order</h1>
+@foreach (var product in Model.Products)
+{
+    <div>
+        <label>Name: </label>
+        <span>@product.Name</span>
+        <br />
+        <label>Amount: </label>
+        <span>@product.Quantity</span>
+    </div>
+}

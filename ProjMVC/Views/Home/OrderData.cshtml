@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+@using MVCProject_.Models
+@model User
+
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: calc(100% - 12px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+</style>
+
+<h1>Enter your values</h1>
+<form asp-action="ShowOrderResultData" method="post">
+    @for (int i = 0; i < Model.Products.Count; i++)
+    {
+        <div>
+            <p>Order @i:</p>
+            <label>Name: </label>
+            <input name="Products[@i].Name" value="@Model.Products[i].Name" />
+            <label>Amount: </label>
+            <input name="Products[@i].Quantity" type="number" value="@Model.Products[i].Quantity" />
+        </div>
+    }
+    <button type="submit">Submit</button>
+</form>
