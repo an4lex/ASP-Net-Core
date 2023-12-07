@@ -1,4 +1,4 @@
-namespace lr10.Models
+namespace lr11.Models
 {
     public class ErrorViewModel
     {
