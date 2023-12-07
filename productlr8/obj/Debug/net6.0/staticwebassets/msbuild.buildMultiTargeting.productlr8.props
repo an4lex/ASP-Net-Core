@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\productlr8.props" />
+</Project>
