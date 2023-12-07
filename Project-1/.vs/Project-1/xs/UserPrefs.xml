@@ -1,28 +1,27 @@
 ﻿<Properties StartupConfiguration="{D328738F-C528-404B-B4F7-9DD5085D6845}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Configurations/aboutGoogle.json">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Project-1 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Configurations/aboutGoogle.json" Line="6" Column="6" IsPinned="True" />
+      <File FileName="Program.cs" Line="10" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Project-1">
             <Node name="Project-1">
-              <Node name="Configurations" expanded="True">
-                <Node name="aboutGoogle.json" selected="True" />
-              </Node>
+              <Node name="Interfaces" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Project-1 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
